@@ -8,6 +8,7 @@ namespace IC_calculator
 {
     internal abstract class CalculatorBase
     {
+        public enum Operator { Add=1, Subtract, Multiply };
         // Method to add two integers
         public abstract float Add(float a, float b);
 

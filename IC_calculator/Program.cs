@@ -10,6 +10,7 @@
 
 
 using IC_calculator;
+using static IC_calculator.CalculatorBase;
 
 var calculator = new Calculator();
 
@@ -33,17 +34,16 @@ while (true)
     Console.WriteLine("Input the second number: ");
     float right = calculator.Valid(Console.ReadLine());
 
-    switch (op)
+    switch ((Operator)op)
     {
-        case 1:
+        case Operator.Add:
             Console.WriteLine($"result: {left} + {right} = " + calculator.Add(left, right));
             break;
-        case 2:
+        case Operator.Subtract:
             Console.WriteLine($"result: {left} - {right} = " + calculator.Subtract(left, right));
             break;
-        case 3:
+        case Operator.Multiply:
             Console.WriteLine($"result: {left} * {right} = " + calculator.Multiply(left, right));
             break;
     }
-
 }
