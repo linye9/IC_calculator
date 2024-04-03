@@ -1,13 +1,5 @@
 ﻿// Exercise Week 1
-//Create a calculator .NET console application with requirements:
-//1.Calculator should be able to do Add, Subtract and Multiply
-//2. Create an abstract base class called CalculatorBase, which contains Add,
-//Subtract and Multiply function. All 3 function takes EXACTLY 2 interger
-//arguments as input.
-//3. Inherit the Abstract base class with a class called Calculator, which 
-//overrides Add, Subtract and Multiply function from base class
-//4.Call each of the calculator functions from Program.cs file
-
+//Create a calculator .NET console application
 
 using IC_calculator;
 
